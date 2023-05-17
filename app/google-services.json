@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "796162576728",
+    "project_id": "gibitayfa-1cfc5",
+    "storage_bucket": "gibitayfa-1cfc5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796162576728:android:a17bffa6c4cf1805fdd52d",
+        "android_client_info": {
+          "package_name": "com.demir.gibitayfa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796162576728-heeppfaeabhh40o20d03nttfn13f6ijn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbvmTnjTiDPHDkuL4rsTRoYKJdAYGJ76E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796162576728-heeppfaeabhh40o20d03nttfn13f6ijn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796162576728:android:b5a9df4fcce6110ffdd52d",
+        "android_client_info": {
+          "package_name": "com.demir.gibitayfaa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796162576728-heeppfaeabhh40o20d03nttfn13f6ijn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbvmTnjTiDPHDkuL4rsTRoYKJdAYGJ76E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796162576728-heeppfaeabhh40o20d03nttfn13f6ijn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

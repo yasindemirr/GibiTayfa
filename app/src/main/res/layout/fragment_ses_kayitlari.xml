@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.SesKayitlariFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/recordView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/view_back">
+        </View>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yılmaz ın sözleri"
+            android:textSize="@dimen/_25ssp"
+            android:id="@+id/userWords"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/_10sdp">
+        </TextView>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:padding="@dimen/_2sdp"
+            app:strokeWidth="@dimen/_3sdp"
+            app:strokeColor="@color/black"
+            android:id="@+id/ownerImage"
+            android:scaleType="fitXY"
+            app:shapeAppearanceOverlay="@style/Circular"
+            android:src="@drawable/yilmaz_yeni"
+            app:layout_constraintBottom_toBottomOf="@id/recordView"
+            app:layout_constraintTop_toBottomOf="@id/recordView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+        </com.google.android.material.imageview.ShapeableImageView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/gibiRec"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:listitem="@layout/record_item"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@id/ownerImage"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:id="@+id/progresss"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@id/gibiRec"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+        </ProgressBar>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

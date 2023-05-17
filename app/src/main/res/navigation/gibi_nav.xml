@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gibi_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.demir.gibitayfa.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_sesKayitlariFragment"
+            app:destination="@id/sesKayitlariFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sesKayitlariFragment"
+        android:name="com.demir.gibitayfa.ui.SesKayitlariFragment"
+        android:label="fragment_ses_kayitlari"
+        tools:layout="@layout/fragment_ses_kayitlari" >
+        <action
+            android:id="@+id/action_sesKayitlariFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="owner"
+            app:argType="string" />
+    </fragment>
+</navigation>

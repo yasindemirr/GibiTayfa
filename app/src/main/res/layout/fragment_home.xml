@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/toolbar_back"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.HomeFragment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/nosifer"
+            android:id="@+id/gibitext"
+            android:text="Gibi Tayfa"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+   <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+       android:paddingHorizontal="@dimen/_5sdp"
+       android:paddingVertical="@dimen/_20sdp"
+        android:background="@drawable/recyler_backround"
+        app:layout_constraintTop_toBottomOf="@id/gibitext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:id="@+id/cons1">
+               <RelativeLayout
+                   android:layout_width="@dimen/_150sdp"
+                   android:id="@+id/detail"
+                   android:visibility="visible"
+                   android:layout_height="@dimen/_115sdp"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   >
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/yilmaz_yeni">
+                   </ImageView>
+                   <FrameLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:background="@drawable/resim_back">
+                   </FrameLayout>
+               </RelativeLayout>
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="0dp"
+                   android:layout_height="0dp"
+                   app:layout_constraintTop_toTopOf="@id/detail"
+                   android:layout_marginTop="@dimen/_30sdp"
+                   app:layout_constraintStart_toEndOf="@id/detail"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintBottom_toBottomOf="@id/detail"
+                   android:background="@drawable/list_back_two">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       android:layout_marginStart="@dimen/_20sdp"
+                       android:text="YILMAZ"
+                       android:id="@+id/yilmaz"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/_20ssp">
+
+                   </TextView>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:id="@+id/cons2">
+
+               <RelativeLayout
+                   android:layout_width="@dimen/_150sdp"
+                   android:id="@+id/detail2"
+                   android:layout_height="@dimen/_115sdp"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   >
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/ilkkan_yeni">
+                   </ImageView>
+                   <FrameLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:background="@drawable/resim_back">
+                   </FrameLayout>
+               </RelativeLayout>
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="0dp"
+                   android:layout_height="0dp"
+                   app:layout_constraintTop_toTopOf="@id/detail2"
+                   android:layout_marginTop="@dimen/_30sdp"
+                   app:layout_constraintEnd_toStartOf="@id/detail2"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintBottom_toBottomOf="@id/detail2"
+                   android:background="@drawable/list_back">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       android:layout_marginEnd="@dimen/_20sdp"
+                       android:text="İLKKAN"
+                       android:id="@+id/ilkkan"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/_20ssp">
+
+                   </TextView>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:id="@+id/cons3">
+               <RelativeLayout
+                   android:layout_width="@dimen/_150sdp"
+                   android:id="@+id/detail3"
+                   android:visibility="visible"
+                   android:layout_height="@dimen/_115sdp"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   >
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/ersoy">
+                   </ImageView>
+                   <FrameLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:background="@drawable/resim_back">
+                   </FrameLayout>
+               </RelativeLayout>
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="0dp"
+                   android:layout_height="0dp"
+                   app:layout_constraintTop_toTopOf="@id/detail3"
+                   android:layout_marginTop="@dimen/_30sdp"
+                   app:layout_constraintStart_toEndOf="@id/detail3"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintBottom_toBottomOf="@id/detail3"
+                   android:background="@drawable/list_back_two">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       android:layout_marginStart="@dimen/_20sdp"
+                       android:text="ERSOY"
+                       android:id="@+id/ersoy"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/_20ssp">
+
+                   </TextView>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+       </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
